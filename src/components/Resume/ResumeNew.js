@@ -17,6 +17,9 @@ function ResumeNew() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Path absolut ke PDF di GitHub Pages
+  const pdfUrl = "https://ipan140.github.io/Portofolio/CVATS_ivano.pdf";
+
   return (
     <Container fluid className="resume-section flex-grow-1">
       <Particle />
@@ -25,7 +28,7 @@ function ResumeNew() {
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <Button
           variant="primary"
-          href="/CVATS_ivano.pdf"
+          href={pdfUrl}
           target="_blank"
           style={{ maxWidth: "250px" }}
         >
@@ -35,7 +38,7 @@ function ResumeNew() {
 
       {/* Tampilan PDF */}
       <Row className="resume">
-        <Document file="/CVATS_ivano.pdf" className="d-flex justify-content-center">
+        <Document file={pdfUrl} className="d-flex justify-content-center">
           <Page pageNumber={1} scale={width > 786 ? 1.5 : 0.6} />
         </Document>
       </Row>
@@ -44,7 +47,7 @@ function ResumeNew() {
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <Button
           variant="primary"
-          href="/CVATS_ivano.pdf"
+          href={pdfUrl}
           target="_blank"
           style={{ maxWidth: "250px" }}
         >
