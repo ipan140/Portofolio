@@ -2,12 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+// import gambar dari folder Projects
+import pythonImg from "../../Assets/Projects/python logo.png";
+import topupImg from "../../Assets/Projects/topup.png";
+import renpyImg from "../../Assets/Projects/renpy.png";
+import gofarmImg from "../../Assets/Projects/Gofarm.png";
+import pastijadiImg from "../../Assets/Projects/Pastijadi.png";
+import tbnImg from "../../Assets/Projects/TBN.png";
+import linkkerjakuImg from "../../Assets/Projects/Linkkerjaku.png";
+import rfcImg from "../../Assets/Projects/RFC.png";
 
 function Projects() {
   return (
@@ -18,73 +22,107 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Berikut adalah beberapa project yang sudah saya kerjakan di GitHub.
         </p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={topupImg}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Top-up Game"
+              description="Aplikasi top-up game menggunakan Laravel Blade."
+              ghLink="https://github.com/ipan140/Top-up-game"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={pythonImg}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Aplikasi Weather"
+              description="Aplikasi cuaca sederhana menggunakan Python dengan API."
+              ghLink="https://github.com/ipan140/aplikasi-weather-dan-sebagainya"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={pythonImg}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Aplikasi Kalkulator & Kegiatan"
+              description="Aplikasi kalkulator dan manajemen kegiatan berbasis Python."
+              ghLink="https://github.com/ipan140/Aplikasi-Kegiatan-kalkulatar-dan-sebagainya"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={pythonImg}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Game Sederhana Python"
+              description="Kumpulan game sederhana yang dibuat menggunakan Python."
+              ghLink="https://github.com/ipan140/Game-sederhana-python"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={renpyImg}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Visual Comic RenPy"
+              description="Visual novel comic interaktif menggunakan RenPy Engine."
+              ghLink="https://github.com/ipan140/visual-comic-renpy"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={gofarmImg}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Go-Farm Mobile"
+              description="Aplikasi mobile Go-Farm berbasis JavaScript."
+              ghLink="https://github.com/ipan140/Go-farm-mobile"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pastijadiImg}
+              isBlog={false}
+              title="Company Profile Pastijadi"
+              description="Website company profile menggunakan Laravel Blade."
+              ghLink="https://github.com/ipan140/Company-profil-pastijadi"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tbnImg}
+              isBlog={false}
+              title="TBN Hackathon"
+              description="Project untuk kompetisi Hackathon menggunakan Laravel Blade."
+              ghLink="https://github.com/ipan140/TBN-Hackaton"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={linkkerjakuImg}
+              isBlog={false}
+              title="LinkKerjaku Jobseeker"
+              description="Platform pencari kerja berbasis Laravel Blade."
+              ghLink="https://github.com/ipan140/Linkkerjaku-jobseeker"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rfcImg}
+              isBlog={false}
+              title="RFC-CODE"
+              description="Project berbasis PHP untuk belajar dan eksperimen."
+              ghLink="https://github.com/ipan140/RFC-CODE"
             />
           </Col>
         </Row>

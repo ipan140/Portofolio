@@ -1,7 +1,17 @@
+/* Root App layout */
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* biar footer tetap di bawah */
   text-align: center;
 }
 
+/* Bagian konten utama supaya fleksibel */
+.flex-grow-1 {
+  flex: 1;
+}
+
+/* Logo animasi (kalau masih mau pakai) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +23,7 @@
   }
 }
 
+/* Header bisa dipakai kalau butuh section penuh */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +35,12 @@
   color: white;
 }
 
+/* Link style */
 .App-link {
   color: #61dafb;
 }
 
+/* Animasi logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
