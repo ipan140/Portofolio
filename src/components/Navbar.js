@@ -39,7 +39,6 @@ function NavBar() {
       <Container>
         {/* Brand */}
         <Navbar.Brand href="/" className="d-flex align-items-center">
-          <img src={logo} className="img-fluid logo me-2" alt="brand" />
           <span className="brand-name">Ivano Rossi Sugiyanto</span>
         </Navbar.Brand>
 
