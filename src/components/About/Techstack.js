@@ -1,7 +1,21 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiJavascript1, DiReact, DiNodejs, DiPython, DiGit } from "react-icons/di";
-import { SiLaravel, SiWindows, SiPhp, SiApache } from "react-icons/si"; // Laravel, Laragon, PHP, XAMPP
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiPython,
+  DiGit,
+} from "react-icons/di";
+import {
+  SiLaravel,
+  SiWindows,
+  SiPhp,
+  SiApache,
+  SiVuedotjs,
+  SiLinux,
+  SiKalilinux, // ← Tambahan Kali Linux
+} from "react-icons/si";
 
 function Techstack() {
   return (
@@ -16,24 +30,24 @@ function Techstack() {
         <DiReact title="ReactJS" />
       </Col>
 
+      {/* Vue.js */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVuedotjs title="Vue.js" />
+      </Col>
+
       {/* Node.js */}
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs title="Node.js" />
       </Col>
 
-      {/* Laragon */}
+      {/* Laravel */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows title="Laragon" />
+        <SiLaravel title="Laravel" />
       </Col>
 
       {/* PHP */}
       <Col xs={4} md={2} className="tech-icons">
         <SiPhp title="PHP" />
-      </Col>
-
-      {/* XAMPP */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiApache title="XAMPP" />
       </Col>
 
       {/* Python */}
@@ -46,9 +60,24 @@ function Techstack() {
         <DiGit title="Git" />
       </Col>
 
-      {/* Laravel */}
+      {/* Laragon */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiLaravel title="Laravel" />
+        <SiWindows title="Laragon" />
+      </Col>
+
+      {/* XAMPP */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApache title="XAMPP" />
+      </Col>
+
+      {/* Linux */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux title="Linux" />
+      </Col>
+
+      {/* Kali Linux */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKalilinux title="Kali Linux" />
       </Col>
     </Row>
   );

@@ -12,6 +12,11 @@ import pastijadiImg from "../../Assets/Projects/Pastijadi.png";
 import tbnImg from "../../Assets/Projects/TBN.png";
 import linkkerjakuImg from "../../Assets/Projects/Linkkerjaku.png";
 import rfcImg from "../../Assets/Projects/RFC.png";
+import chtBotPyImg from "../../Assets/Projects/Cht bot pyton.png";
+import erpFrontendImg from "../../Assets/Projects/ERP frontend.png";
+import laravelImg from "../../Assets/Projects/laravel.png";
+import mobileChatBotImg from "../../Assets/Projects/Mobile cht bot.png";
+import peminjamanBukuImg from "../../Assets/Projects/Peminjaman buku.jpg";
 
 function Projects() {
   return (
@@ -26,6 +31,27 @@ function Projects() {
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {/* --- Project utama --- */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={erpFrontendImg}
+              isBlog={false}
+              title="Frontend ERP"
+              description="Tampilan dashboard ERP menggunakan Vue dan TailwindCSS."
+              ghLink="https://github.com/ipan140/Frontend-ERP"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={laravelImg}
+              isBlog={false}
+              title="Backend ERP"
+              description="API backend ERP menggunakan Laravel untuk modul Sales, Accounting, HR, dan SCM."
+              ghLink="https://github.com/ipan140/Backend-ERP"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={topupImg}
@@ -123,6 +149,37 @@ function Projects() {
               title="RFC-CODE"
               description="Project berbasis PHP untuk belajar dan eksperimen."
               ghLink="https://github.com/ipan140/RFC-CODE"
+            />
+          </Col>
+
+          {/* --- Chatbot Project --- */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chtBotPyImg}
+              isBlog={false}
+              title="Chatbot Website"
+              description="Chatbot sederhana berbasis Python untuk web interface."
+              ghLink="https://github.com/ipan140/chtbot_gemini_ai"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobileChatBotImg}
+              isBlog={false}
+              title="Chatbot Mobile"
+              description="Chatbot versi mobile menggunakan JavaScript dan React Native."
+              ghLink="https://github.com/ipan140/chatbot_mobile_gemini"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={peminjamanBukuImg}
+              isBlog={false}
+              title="Peminjaman Buku"
+              description="Sistem peminjaman buku digital berbasis Laravel."
+              ghLink="https://github.com/ipan140"
             />
           </Col>
         </Row>
